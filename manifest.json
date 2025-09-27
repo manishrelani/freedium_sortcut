@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Freedium Open Current",
+    "version": "1.0",
+    "description": "Open current tab in freedium.cfd via shortcut",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "open-freedium-new-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+O",
+                "mac": "Command+Shift+O"
+            },
+            "description": "Open current tab in freedium.cfd in new tab"
+        },
+        "open-freedium": {
+            "suggested_key": {
+                "default": "Alt+O",
+                "mac": "Alt+O"
+            },
+            "description": "Open current tab in freedium.cfd"
+        }
+    }
+}
